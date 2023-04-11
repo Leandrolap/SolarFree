@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SolarFree.View.Suporte"
+             Title="Suporte"
+             BackgroundColor="#DEFFD9">
+    
+    <VerticalStackLayout Spacing="15">
+        <VerticalStackLayout Margin="15,0">
+            <Label Text="Suporte" FontFamily="SoftBlack" FontSize="50" TextColor="#0B4302"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Margin="15,0">
+            <Label Text="NOME" FontFamily="ComfortaaLight" FontSize="15" TextColor="#0B4302"/>
+            <Entry BackgroundColor="#EBEBEC" TextColor="#0B4302"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Margin="15,0">
+            <Label Text="Selecione o tipo de problema" FontFamily="ComfortaaLight" FontSize="15" TextColor="#0B4302"/>
+            <Picker x:Name="picker" BackgroundColor="#EBEBEC" TextColor="#0B4302">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Dúvidas</x:String>
+                        <x:String>Problemas com a bateria</x:String>
+                        <x:String>Instalação</x:String>
+                        <x:String>Planos</x:String>
+                        <x:String>Outros</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Margin="15,0">
+            <Label Text="Descreva o problema (opcional)" FontFamily="ComfortaaLight" FontSize="15" TextColor="#0B4302"/>
+            <Editor Margin="15,0" WidthRequest="350" HeightRequest="200" HorizontalOptions="Center" BackgroundColor="#EBEBEC" TextColor="#0B4302"/>
+        </VerticalStackLayout>
+
+        <Button Text="Enviar" 
+                    HorizontalOptions="Center" 
+                    TextColor="#0B4302" 
+                    BackgroundColor="#D1E6E8" 
+                    WidthRequest="200"
+                    Margin="10"/>
+    </VerticalStackLayout>
+</ContentPage>

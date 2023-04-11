@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SolarFree.View.Sobre"
+             Title="Sobre"
+             BackgroundColor="#DEFFD9">
+    <VerticalStackLayout>
+        <Label Text="Solar Free" FontFamily="SoftBlack" FontSize="50" TextColor="#0B4302" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+    </VerticalStackLayout>
+</ContentPage>

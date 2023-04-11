@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SolarFree.View.MeuPlano"
+             Title="MeuPlano"
+             BackgroundColor="#DEFFD9">
+    <VerticalStackLayout>
+        <VerticalStackLayout Margin="15,0">
+            <Label Text="Meu" FontFamily="SoftBlack" FontSize="50" TextColor="#0B4302"/>
+            <Label Text="Plano" FontSize="25" Margin="45,0" FontFamily="ComfortaaLight" TextColor="#0B4302"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Margin="0,50,0,0">
+            <VerticalStackLayout Margin="20,0,0,50">
+                <Label Text="Seu plano é o " 
+                   FontSize="17" FontFamily="ComfortaaLight" TextColor="#0B4302"/>
+                
+                <Label Text="Easy" FontFamily="SoftBlack" FontSize="25" TextColor="#0B4302"/>
+
+                <Label Text="Número da instalação: 02145778451-07" 
+                   FontSize="14" FontFamily="ComfortaaLight" TextColor="#0B4302"/>
+            </VerticalStackLayout>
+            <Label Text="Você está isento de custos. Você está coberto pelo programa Luz para Todos." 
+                   FontSize="17" FontFamily="ComfortaaLight" TextColor="#0B4302" Margin="20,0,20,50"/>
+        </VerticalStackLayout>
+
+        <Grid ColumnDefinitions="*,*">
+            <VerticalStackLayout Grid.Column="0">
+                <Label Text="Potência Instalada" FontFamily="SoftBlack" HorizontalOptions="Center" FontSize="15" TextColor="#0B4302"/>
+                <Image Source="energy.png" HeightRequest="80"/>
+                <Label Text="2,31 kWp" TextColor="#0B4302" HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="1">
+                <Label Text="Economia anual aprox." HorizontalOptions="Center" FontFamily="SoftBlack" FontSize="15" TextColor="#0B4302"/>
+                <Image Source="wallet.png" HeightRequest="80"/>
+                <Label Text="R$ 2.134,81" TextColor="#0B4302" HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

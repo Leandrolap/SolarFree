@@ -12,7 +12,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>SolarFree</ApplicationTitle>
+		<ApplicationTitle>Solar Free</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.solarfree</ApplicationId>
@@ -32,10 +32,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#DEFFD9" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+    <MauiSplashScreen Include="Resources\Splash\solarfree.svg" Color="#DEFFD9" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -46,6 +46,63 @@
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiAsset Remove="Resources\Raw\accumulator.png" />
+	  <MauiAsset Remove="Resources\Raw\cara.png" />
+	  <MauiAsset Remove="Resources\Raw\casa.png" />
+	  <MauiAsset Remove="Resources\Raw\documentacao.svg" />
+	  <MauiAsset Remove="Resources\Raw\energy.png" />
+	  <MauiAsset Remove="Resources\Raw\informacoes.png" />
+	  <MauiAsset Remove="Resources\Raw\perfil.svg" />
+	  <MauiAsset Remove="Resources\Raw\solar.png" />
+	  <MauiAsset Remove="Resources\Raw\suporte.svg" />
+	  <MauiAsset Remove="Resources\Raw\wallet.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Raw\accumulator.png" />
+	  <None Remove="Resources\Raw\cara.png" />
+	  <None Remove="Resources\Raw\casa.png" />
+	  <None Remove="Resources\Raw\documentacao.svg" />
+	  <None Remove="Resources\Raw\energy.png" />
+	  <None Remove="Resources\Raw\informacoes.png" />
+	  <None Remove="Resources\Raw\perfil.svg" />
+	  <None Remove="Resources\Raw\solar.png" />
+	  <None Remove="Resources\Raw\suporte.svg" />
+	  <None Remove="Resources\Raw\wallet.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Raw\accumulator.png" />
+	  <MauiImage Include="Resources\Raw\cara.png" />
+	  <MauiImage Include="Resources\Raw\casa.png" />
+	  <MauiImage Include="Resources\Raw\documentacao.svg" />
+	  <MauiImage Include="Resources\Raw\energy.png" />
+	  <MauiImage Include="Resources\Raw\informacoes.png" />
+	  <MauiImage Include="Resources\Raw\perfil.svg" />
+	  <MauiImage Include="Resources\Raw\solar.png" />
+	  <MauiImage Include="Resources\Raw\suporte.svg" />
+	  <MauiImage Include="Resources\Raw\wallet.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="View\MeuPlano.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Perfil.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Sobre.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Suporte.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\TelaInicial.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

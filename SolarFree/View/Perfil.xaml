@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SolarFree.View.Perfil"
+             Title="Perfil"
+             BackgroundColor="#DEFFD9">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="15">
+            <VerticalStackLayout Margin="15,0">
+                <Label Text="Perfil" FontFamily="SoftBlack" FontSize="50" TextColor="#0B4302"/>
+            </VerticalStackLayout>
+
+            <Image Source="cara.png" HeightRequest="150"/>
+
+            <VerticalStackLayout Margin="15,0">
+                <Label Text="NOME" FontFamily="SoftBlack" FontSize="17" TextColor="#0B4302"/>
+                <Label Text="Usuário Usuário" FontSize="15" FontFamily="ComfortaaLight" TextColor="#0B4302"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Margin="15,0">
+                <Label Text="CPF" FontFamily="SoftBlack" FontSize="17" TextColor="#0B4302"/>
+                <Label Text="123.456.789-01" FontSize="15" FontFamily="ComfortaaLight" TextColor="#0B4302"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Margin="15,0">
+                <Label Text="ENDEREÇO" FontFamily="SoftBlack" FontSize="17" TextColor="#0B4302"/>
+                <Label Text="Rua sem Nome, nº 000, Estado - Brasil" FontSize="15" FontFamily="ComfortaaLight" TextColor="#0B4302"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Margin="15,0">
+                <Label Text="E-MAIL" FontFamily="SoftBlack" FontSize="17" TextColor="#0B4302"/>
+                <Label Text="email@email.com.br" FontSize="15" FontFamily="ComfortaaLight" TextColor="#0B4302"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Margin="15,0">
+                <Label Text="TROCAR A SENHA:" FontFamily="SoftBlack" FontSize="20" TextColor="#0B4302"/>
+                <Label Text="Senha atual:" FontSize="17" FontFamily="ComfortaaLight" TextColor="#0B4302"/>
+                <Entry IsPassword="True" BackgroundColor="#EBEBEC" TextColor="#0B4302"/>
+                <Label Text="Nova senha:" FontSize="17" FontFamily="ComfortaaLight" TextColor="#0B4302"/>
+                <Entry IsPassword="True" BackgroundColor="#EBEBEC" TextColor="#0B4302" />
+            </VerticalStackLayout>
+
+
+            <Button Text="Salvar" 
+                    HorizontalOptions="Center" 
+                    TextColor="#0B4302" 
+                    BackgroundColor="#D1E6E8" 
+                    WidthRequest="200"
+                    Margin="10"/>
+
+            <Button Text="Sair da conta" 
+                    HorizontalOptions="Center" 
+                    TextColor="#0B4302" 
+                    BackgroundColor="Transparent" 
+                    WidthRequest="200"
+                    Margin="10"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

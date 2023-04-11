@@ -4,11 +4,37 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:SolarFree"
-    Shell.FlyoutBehavior="Disabled">
+    Shell.FlyoutBehavior="Disabled"
+    xmlns:views="clr-namespace:SolarFree.View"
+    NavigationPage.HasNavigationBar="False"
+    Shell.NavBarIsVisible="False"
+    Shell.NavBarHasShadow="False"
+    Shell.TabBarBackgroundColor="#0B4302">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <Tab Title="Início"
+            Icon="casa.png">
+            <ShellContent ContentTemplate="{DataTemplate views:TelaInicial}" />
+        </Tab>
+        
+        <Tab Title="Meu Plano"
+            Icon="documentacao.png">
+            <ShellContent ContentTemplate="{DataTemplate views:MeuPlano}" />
+        </Tab>
 
+        <Tab Title="Perfil"
+            Icon="perfil.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Perfil}" />
+        </Tab>
+
+        <Tab Title="Suporte"
+            Icon="suporte.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Suporte}" />
+        </Tab>
+
+        <Tab Title="Sobre"
+            Icon="informacoes.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Sobre}" />
+        </Tab>
+    </TabBar>
 </Shell>

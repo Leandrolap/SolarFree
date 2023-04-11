@@ -1,4 +1,6 @@
-﻿namespace SolarFree;
+﻿using SolarFree.View;
+
+namespace SolarFree;
 
 public partial class App : Application
 {

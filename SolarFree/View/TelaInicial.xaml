@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SolarFree.View.TelaInicial"
+             Title="TelaInicial"
+             BackgroundColor="#DEFFD9">
+
+    <VerticalStackLayout>
+        <VerticalStackLayout Margin="15,0">
+            <Label Text="Olá" FontFamily="SoftBlack" FontSize="50" TextColor="#0B4302"/>
+            <Label Text="Leandro Paiva" FontSize="25" Margin="45,0" FontFamily="ComfortaaLight" TextColor="#0B4302"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" Margin="0,90">
+            <HorizontalStackLayout>
+                <Label Text="Nível da bateria: " TextColor="#0B4302" Margin="15,0,0,0"/>
+                <Label Text="Completo" TextColor="#0B4302"/>
+            </HorizontalStackLayout>
+            <Border WidthRequest="280" HeightRequest="45" BackgroundColor="White" Stroke="Transparent">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="40,40,40,40" />
+                </Border.StrokeShape>
+
+                <Border HeightRequest="25" WidthRequest="250" BackgroundColor="#14B823" Stroke="Transparent">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="40,40,40,40" />
+                    </Border.StrokeShape>
+                </Border>
+            </Border>
+        </VerticalStackLayout>
+
+        <Label Text="Meu Consumo:" TextColor="#0B4302" FontFamily="SoftBlack" Margin="15,0"/>
+
+        <HorizontalStackLayout HorizontalOptions="Center" Margin="15,15,15,0">
+            <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="100">
+                <VerticalStackLayout Grid.Column="0">
+                    <Label Text="Produção:" TextColor="#0B4302" Grid.Column="0"/>
+                    <Image Source="solar.png" HeightRequest="80"/>
+                    <Label Text="255,20 kWh\ mês" TextColor="#0B4302" Grid.Column="0"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="1">
+                    <Label Text="Qualidade da bateria:" TextColor="#0B4302" Grid.Column="0"/>
+                    <Image Source="accumulator.png" HeightRequest="80"/>
+                    <Label Text="Ótima" TextColor="#0B4302" Grid.Column="0" HorizontalTextAlignment="Center"/>
+                </VerticalStackLayout>
+            </Grid>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
