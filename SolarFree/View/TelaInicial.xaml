@@ -13,18 +13,19 @@
 
         <VerticalStackLayout HorizontalOptions="Center" Margin="0,90">
             <HorizontalStackLayout>
-                <Label Text="Nível da bateria: " TextColor="#0B4302" Margin="15,0,0,0"/>
-                <Label Text="Completo" TextColor="#0B4302"/>
+                <Label Text="Status da carga: " TextColor="#0B4302" Margin="15,0,0,0"/>
+                <Label x:Name="BatteryStateLabel" TextColor="#0B4302"/>
             </HorizontalStackLayout>
             <Border WidthRequest="280" HeightRequest="45" BackgroundColor="White" Stroke="Transparent">
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="40,40,40,40" />
                 </Border.StrokeShape>
 
-                <Border HeightRequest="25" WidthRequest="250" BackgroundColor="#14B823" Stroke="Transparent">
+                <Border x:Name="BateriaCor" HeightRequest="25" WidthRequest="250" Stroke="Transparent">
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="40,40,40,40" />
                     </Border.StrokeShape>
+                    <Label HorizontalOptions="Center" x:Name="BatteryLevelLabel" TextColor="#0B4302"/>
                 </Border>
             </Border>
         </VerticalStackLayout>

@@ -35,7 +35,7 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#DEFFD9" />
 
 		<!-- Splash Screen -->
-    <MauiSplashScreen Include="Resources\Splash\solarfree.svg" Color="#DEFFD9" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\lsplash.svg" Color="#DEFFD9" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -54,7 +54,9 @@
 	  <MauiAsset Remove="Resources\Raw\casa.png" />
 	  <MauiAsset Remove="Resources\Raw\documentacao.svg" />
 	  <MauiAsset Remove="Resources\Raw\energy.png" />
+	  <MauiAsset Remove="Resources\Raw\fundo.png" />
 	  <MauiAsset Remove="Resources\Raw\informacoes.png" />
+	  <MauiAsset Remove="Resources\Raw\ods.png" />
 	  <MauiAsset Remove="Resources\Raw\perfil.svg" />
 	  <MauiAsset Remove="Resources\Raw\solar.png" />
 	  <MauiAsset Remove="Resources\Raw\suporte.svg" />
@@ -67,7 +69,9 @@
 	  <None Remove="Resources\Raw\casa.png" />
 	  <None Remove="Resources\Raw\documentacao.svg" />
 	  <None Remove="Resources\Raw\energy.png" />
+	  <None Remove="Resources\Raw\fundo.png" />
 	  <None Remove="Resources\Raw\informacoes.png" />
+	  <None Remove="Resources\Raw\ods.png" />
 	  <None Remove="Resources\Raw\perfil.svg" />
 	  <None Remove="Resources\Raw\solar.png" />
 	  <None Remove="Resources\Raw\suporte.svg" />
@@ -80,7 +84,9 @@
 	  <MauiImage Include="Resources\Raw\casa.png" />
 	  <MauiImage Include="Resources\Raw\documentacao.svg" />
 	  <MauiImage Include="Resources\Raw\energy.png" />
+	  <MauiImage Include="Resources\Raw\fundo.png" />
 	  <MauiImage Include="Resources\Raw\informacoes.png" />
+	  <MauiImage Include="Resources\Raw\ods.png" />
 	  <MauiImage Include="Resources\Raw\perfil.svg" />
 	  <MauiImage Include="Resources\Raw\solar.png" />
 	  <MauiImage Include="Resources\Raw\suporte.svg" />

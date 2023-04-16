@@ -3,8 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SolarFree.View.Sobre"
              Title="Sobre"
-             BackgroundColor="#DEFFD9">
+             BackgroundImageSource="fundo.png">
     <VerticalStackLayout>
-        <Label Text="Solar Free" FontFamily="SoftBlack" FontSize="50" TextColor="#0B4302" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+        <Label Text="Solar Free" FontFamily="SoftBlack" FontSize="50" TextColor="White" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+
+        <VerticalStackLayout Margin="18" Spacing="25">
+            <Label Text="Somos a Luz para todos e estamos aqui para sanar qualquer duvida, além de levar eletricidade aqueles que por alguma razão não possuem acesso a mesma. Através de painéis solares que armazenam em baterias a irradiação solar e convertendo em energia. Garantindo segurança e conforto a todos!" 
+               FontSize="15" 
+               FontFamily="ComfortaaLight" 
+               TextColor="White"/>
+
+            <Image Source="ods.png"/>
+
+            <Label Text="Versão: 2023.4" 
+               FontSize="10" 
+               HorizontalOptions="Center"
+               VerticalOptions="EndAndExpand"
+               FontFamily="ComfortaaLight" 
+               TextColor="White"/>
+        </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>
