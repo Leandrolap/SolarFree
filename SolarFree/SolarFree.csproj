@@ -32,7 +32,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#DEFFD9" />
+		<MauiIcon Include="Resources\AppIcon\logoicon.svg" ForegroundFile="Resources\AppIcon\logoicon.svg" Color="#DEFFD9" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\lsplash.svg" Color="#DEFFD9" BaseSize="128,128" />
@@ -56,6 +56,7 @@
 	  <MauiAsset Remove="Resources\Raw\energy.png" />
 	  <MauiAsset Remove="Resources\Raw\fundo.png" />
 	  <MauiAsset Remove="Resources\Raw\informacoes.png" />
+	  <MauiAsset Remove="Resources\Raw\logologin.png" />
 	  <MauiAsset Remove="Resources\Raw\ods.png" />
 	  <MauiAsset Remove="Resources\Raw\perfil.svg" />
 	  <MauiAsset Remove="Resources\Raw\solar.png" />
@@ -71,6 +72,7 @@
 	  <None Remove="Resources\Raw\energy.png" />
 	  <None Remove="Resources\Raw\fundo.png" />
 	  <None Remove="Resources\Raw\informacoes.png" />
+	  <None Remove="Resources\Raw\logologin.png" />
 	  <None Remove="Resources\Raw\ods.png" />
 	  <None Remove="Resources\Raw\perfil.svg" />
 	  <None Remove="Resources\Raw\solar.png" />
@@ -86,6 +88,7 @@
 	  <MauiImage Include="Resources\Raw\energy.png" />
 	  <MauiImage Include="Resources\Raw\fundo.png" />
 	  <MauiImage Include="Resources\Raw\informacoes.png" />
+	  <MauiImage Include="Resources\Raw\logologin.png" />
 	  <MauiImage Include="Resources\Raw\ods.png" />
 	  <MauiImage Include="Resources\Raw\perfil.svg" />
 	  <MauiImage Include="Resources\Raw\solar.png" />
@@ -94,6 +97,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="View\Appbar.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\CadastroUsuario.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Login.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\MeuPlano.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

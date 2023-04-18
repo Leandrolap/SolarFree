@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SolarFree.View.Login"
+             Title="Login"
+             BackgroundColor="#DEFFD9">
+    
+    <Grid Margin="20,0,20,0">
+        <VerticalStackLayout VerticalOptions="CenterAndExpand" Spacing="20" Margin="10">
+            <Image Source="logologin.png"
+               HeightRequest="250"
+               VerticalOptions="StartAndExpand"
+               Margin="50"/>
+
+            <Frame CornerRadius="30" 
+                   BackgroundColor="White"
+                   BorderColor="Transparent"
+                   HeightRequest="50"
+                   Padding="0">
+                <Entry Placeholder="e-mail"
+                       PlaceholderColor="Gray"
+                       Keyboard="Email"
+                       TextColor="#0B4302"
+                       Margin="15,0,0,0"
+                       VerticalOptions="Center"/>
+            </Frame>
+
+            <Frame CornerRadius="30" 
+                   BackgroundColor="White"
+                   BorderColor="Transparent"
+                   HeightRequest="50"
+                   Padding="0">
+                <Entry Placeholder="senha"
+                       PlaceholderColor="Gray"
+                       Keyboard="Default"
+                       IsPassword="True"
+                       TextColor="#0B4302"
+                       Margin="15,0,0,0"
+                       VerticalOptions="Center"/>
+            </Frame>
+
+            <Button Text="Entrar"
+                    BackgroundColor="#0B4302"
+                    HorizontalOptions="Center"
+                    TextColor="White"
+                    WidthRequest="200"
+                    VerticalOptions="End"
+                    Clicked="Button_Clicked"
+                    Opacity="0.7"/>
+
+            <Button Text="cadastrar"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="Center"
+                    TextColor="#0B4302"
+                    VerticalOptions="End"
+                    Clicked="Button_Clicked_1"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

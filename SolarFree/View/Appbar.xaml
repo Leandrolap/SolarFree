@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<Shell
-    x:Class="SolarFree.AppShell"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:SolarFree"
-    Shell.FlyoutBehavior="Disabled"
-    xmlns:views="clr-namespace:SolarFree.View"
-    NavigationPage.HasNavigationBar="False"
-    Shell.NavBarIsVisible="False"
-    Shell.NavBarHasShadow="False"
-    Shell.TabBarBackgroundColor="#0B4302">
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="SolarFree.View.Appbar"
+       NavigationPage.HasNavigationBar="False"
+       Shell.NavBarIsVisible="False"
+       Shell.NavBarHasShadow="False"
+       Shell.TabBarBackgroundColor="#0B4302"
+       xmlns:views="clr-namespace:SolarFree.View">
 
     <TabBar>
         <Tab Title="Início"
             Icon="casa.png">
             <ShellContent ContentTemplate="{DataTemplate views:TelaInicial}" />
         </Tab>
-        
+
         <Tab Title="Meu Plano"
             Icon="documentacao.png">
             <ShellContent ContentTemplate="{DataTemplate views:MeuPlano}" />
