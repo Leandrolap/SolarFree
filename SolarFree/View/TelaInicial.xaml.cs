@@ -58,6 +58,8 @@ public partial class TelaInicial : ContentPage
             _ => "Bateria sendo utilizada"
         };
 
+        BateriaCor.BackgroundColor = Color.FromArgb("#FF4500");
+
         BatteryLevelLabel.Text = $"A Bateria está com {e.ChargeLevel * 100}%";
 
         switch (BatteryLevelLabel.Text)
