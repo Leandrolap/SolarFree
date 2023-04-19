@@ -11,8 +11,13 @@
         </VerticalStackLayout>
 
         <VerticalStackLayout Margin="15,0">
-            <Label Text="NOME" FontFamily="ComfortaaLight" FontSize="15" TextColor="#0B4302"/>
+            <Label Text="Nome Completo" FontFamily="ComfortaaLight" FontSize="15" TextColor="#0B4302"/>
             <Entry BackgroundColor="#EBEBEC" TextColor="#0B4302"/>
+
+            <Label Text="Número da instalação: 02145778451-07" 
+                   FontSize="14" 
+                   FontFamily="ComfortaaLight" 
+                   TextColor="#0B4302"/>
         </VerticalStackLayout>
 
         <VerticalStackLayout Margin="15,0">

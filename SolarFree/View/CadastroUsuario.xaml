@@ -74,7 +74,7 @@
                 <Entry Keyboard="Telephone" 
                        ReturnType="Next" 
                        FontSize="15"
-                       Placeholder="Telefone"
+                       Placeholder="Telefone com DDD"
                        TextColor="#0B4302"
                        Margin="15,0,0,0"
                        VerticalOptions="Center"/>

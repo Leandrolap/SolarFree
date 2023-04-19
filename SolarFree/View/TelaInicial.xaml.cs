@@ -58,11 +58,35 @@ public partial class TelaInicial : ContentPage
             _ => "Bateria sendo utilizada"
         };
 
-        BateriaCor.BackgroundColor = Color.FromArgb("#FF4500");
-
         BatteryLevelLabel.Text = $"A Bateria está com {e.ChargeLevel * 100}%";
 
-        switch (BatteryLevelLabel.Text)
+        double corBateria = e.ChargeLevel * 100;
+
+        //do
+        //{
+        //  BateriaCor.BackgroundColor = Color.FromArgb("#008B45");
+        //} while (corBateria >= 71);
+
+        if (corBateria >= 71)
+        {
+            BateriaCor.BackgroundColor = Color.FromArgb("#008B45");
+            BatteryLevelLabel.TextColor = Color.FromRgba("#FFFFFF");
+        }
+        else if (corBateria >= 51)
+        {
+            BateriaCor.BackgroundColor = Color.FromArgb("#C0FF3E");
+        }
+        else if (corBateria >= 31)
+        {
+            BateriaCor.BackgroundColor = Color.FromArgb("#FFFF00");
+        }
+        else
+        {
+            BateriaCor.BackgroundColor = Color.FromArgb("#FF4040");
+        }
+
+
+        /*switch (BatteryLevelLabel.Text)
         {
             case "A Bateria está com 100%":
                 BateriaCor.BackgroundColor = Color.FromArgb("#008B45");
@@ -81,6 +105,6 @@ public partial class TelaInicial : ContentPage
                 break;
 
 
-        }
+        } */
     }
 }
